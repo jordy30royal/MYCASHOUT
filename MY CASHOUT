@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CASHOUT INVEST</title>
+    <style>
+        /* Ton style CSS ici */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0b0b0b; color: #fff; text-align: center; }
+        header { background: #1a1a1a; padding: 10px; }
+        header img { height: 50px; }
+        .banner { width: 100%; max-width: 800px; margin: 10px auto; }
+        .promo { background: #111; padding: 15px; border: 1px solid #444; margin: 20px auto; max-width: 600px; }
+        .promo h2 { color: red; }
+        .promo ul { list-style: none; padding: 0; }
+        .promo li { margin: 8px 0; font-size: 18px; }
+        .form-sim { margin: 20px auto; max-width: 500px; }
+        .form-sim input { padding: 10px; margin: 5px; width: 70%; }
+        .form-sim button { padding: 10px 20px; background: #29a329; border: none; color: #fff; cursor: pointer; }
+        footer { background: #1a1a1a; padding: 10px; font-size: 14px; }
+    </style>
+    <script>
+        function lancer() {
+            const montant = parseInt(document.getElementById("montant").value);
+            let retour = "Entrez un montant valide.";
+            if (montant === 20000) retour = "Vous recevrez 280 000 FCFA";
+            else if (montant === 30000) retour = "Vous recevrez 380 000 FCFA";
+            else if (montant === 50000) retour = "Vous recevrez 580 000 FCFA";
+            else if (montant === 70000) retour = "Vous recevrez 780 000 FCFA";
+            else if (montant === 90000) retour = "Vous recevrez 980 000 FCFA";
+            else if (montant === 100000) retour = "Vous recevrez 1 500 000 FCFA";
+            document.getElementById("resultat").innerText = retour;
+        }
+    </script>
+</head>
+<body>
+    <header><img src="logo.png" alt="MY CASHOUT LOGO"></header>
+    <img src="banner.jpg" class="banner" alt="Bannière MY CASHOUT">
+    <div class="promo">
+        <h2>PROMOTIONS INVESTISSEMENT</h2>
+        <ul>
+            <li>20 000 → 280 000 FCFA</li>
+            <li>30 000 → 380 000 FCFA</li>
+            <li>50 000 → 580 000 FCFA</li>
+            <li>70 000 → 780 000 FCFA</li>
+            <li>90 000 → 980 000 FCFA</li>
+            <li>100 000 → 1 500 000 FCFA</li>
+        </ul>
+        <p>Faites un dépôt à : <strong>+237 658 491 332</strong></p>
+    </div>
+    <div class="form-sim">
+        <input id="montant" type="number" placeholder="Montant en FCFA">
+        <button onclick="simuler()">Simuler</button>
+        <p id="resultat"></p>
+    </div>
+    <p>
+        <a href="https://wa.me/237658491332" style="color:#25D366">WhatsApp</a> |
+        <a href="https://facebook.com/sharer/sharer.php?u=https://jordy30royal.github.io/mycashout" style="color:#3b5998">Facebook</a>
+    </p>
+    <footer>&copy; 2025 MY CASHOUT INVEST</footer>
+</body>
+</html>
